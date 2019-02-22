@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  -webkit-font-smoothing: antialiased; }
+
+.container {
+  max-width: 1140px;
+  margin: auto; }
+
+header {
+  background-image: url("../img/background-header.png");
+  background-position: 50% 50%;
+  background-size: cover; }
+  header .header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 100px 130px 110px; }
+  header .fapor {
+    text-transform: uppercase;
+    color: #ffffff;
+    font: 400 33px Arial Helvetica sans-serif;
+    display: inline-block;
+    text-decoration: none; }
+    header .fapor:before {
+      content: url("../img/icon-logo.png");
+      width: 25px;
+      height: 23px;
+      right: 30px;
+      display: inline-block;
+      margin-right: 30px; }
+
+.link-box ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none; }
+  .link-box ul li {
+    margin-left: 40px; }
+    .link-box ul li a {
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+      display: inline-block;
+      font: 400 14px Arial Helvetica sans-serif; }
+      .link-box ul li a:hover {
+        border-bottom: 1px solid yellow; }
+
+.header-bottom {
+  padding: 0 240px 100px 110px; }
+  .header-bottom .about-us {
+    color: #ffffff;
+    text-transform: uppercase;
+    font: 400 40px Arial Helvetica sans-serif; }
+  .header-bottom .text-header {
+    color: #ffffff;
+    font: 400 14px/27px Arial Helvetica sans-serif; }
+
+main {
+  background-color: #ffffff; }
+  main h2 {
+    color: #24282f;
+    padding: 150px 100px 25px 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #b5a263; }
+  main .foto-man {
+    display: flex;
+    justify-content: space-between; }
+    main .foto-man .foto1 {
+      width: 250px;
+      height: 300px; }
+      main .foto-man .foto1 img {
+        width: 100%; }
+      main .foto-man .foto1 span:first-child {
+        display: inline-block;
+        color: #232323; }
+      main .foto-man .foto1 span:last-child {
+        display: inline-block;
+        color: #b5a263;
+        padding-top: 10px; }
+    main .foto-man .foto2 {
+      width: 250px;
+      height: 300px; }
+      main .foto-man .foto2 img {
+        width: 100%; }
+    main .foto-man .foto3 {
+      width: 250px;
+      height: 300px; }
+      main .foto-man .foto3 img {
+        width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
