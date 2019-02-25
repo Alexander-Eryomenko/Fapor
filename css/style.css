@@ -226,14 +226,14 @@ main {
   position: relative; }
 
 .owl-nav .owl-prev:before {
-  content: url("..//img/prev-button.png");
+  content: url("../img/prev-button.png");
   width: 23px;
   height: 25px;
   position: absolute;
   top: 300px;
   left: 0; }
 .owl-nav .owl-next:after {
-  content: url("..//img/next-button.png");
+  content: url("../img/next-button.png");
   width: 23px;
   height: 25px;
   position: absolute;
