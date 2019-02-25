@@ -55,7 +55,7 @@ header {
         display: inline-block;
         font: 400 14px Arial Helvetica sans-serif; }
       header nav ul li:hover {
-        border-bottom: 1px solid yellow; }
+        border-bottom: 1px solid #b5a263; }
 
 .header-bottom {
   padding: 0 240px 108px 110px; }
@@ -154,10 +154,12 @@ main {
   width: 20px;
   height: 20px;
   margin-left: 15px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  display: inline-block; }
 
 .fab {
-  font-size: 10px; }
+  font-size: 13px;
+  text-align: center; }
 
 .show-all-button {
   width: 164px;
