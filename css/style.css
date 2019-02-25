@@ -10,13 +10,24 @@
   margin: auto; }
 
 header {
-  background-image: url("../img/background-header.png");
-  background-position: 50% 50%;
-  background-size: cover; }
+  background: url("../img/header-layer3.png") fixed center no-repeat;
+  position: relative;
+  z-index: -2; }
+  header:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(42, 44, 50, 0.9);
+    z-index: -1; }
   header .header-top {
     display: flex;
     justify-content: space-between;
-    padding: 38px 100px 130px 110px; }
+    padding: 38px 100px 38px 100px;
+    margin-bottom: 91px;
+    background-color: #24282f; }
   header .fapor {
     text-transform: uppercase;
     color: #ffffff;
@@ -27,27 +38,27 @@ header {
       content: url("../img/icon-logo.png");
       width: 25px;
       height: 23px;
-      right: 30px;
       display: inline-block;
       margin-right: 30px; }
-
-.link-box ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none; }
-  .link-box ul li {
-    margin-left: 40px; }
-    .link-box ul li a {
-      text-transform: uppercase;
-      color: #ffffff;
-      text-decoration: none;
-      display: inline-block;
-      font: 400 14px Arial Helvetica sans-serif; }
-      .link-box ul li a:hover {
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none; }
+    header nav ul li {
+      margin-left: 40px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid transparent; }
+      header nav ul li a {
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        display: inline-block;
+        font: 400 14px Arial Helvetica sans-serif; }
+      header nav ul li:hover {
         border-bottom: 1px solid yellow; }
 
 .header-bottom {
-  padding: 0 240px 100px 110px; }
+  padding: 0 240px 108px 110px; }
   .header-bottom .about-us {
     color: #ffffff;
     text-transform: uppercase;
@@ -63,22 +74,53 @@ main {
     padding: 150px 100px 25px 100px;
     margin-bottom: 30px;
     text-align: center;
-    border-bottom: 1px solid #b5a263; }
+    font: 400 24px Arial Helvetica sans-serif; }
+    main h2:after {
+      display: block;
+      content: "";
+      margin: auto;
+      margin-top: 30px;
+      background-color: #b5a263;
+      height: 2px;
+      width: 78px; }
   main .foto-man {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin-bottom: 40px; }
     main .foto-man .foto1 {
       width: 250px;
       height: 300px; }
       main .foto-man .foto1 img {
         width: 100%; }
-      main .foto-man .foto1 span:first-child {
-        display: inline-block;
-        color: #232323; }
-      main .foto-man .foto1 span:last-child {
-        display: inline-block;
-        color: #b5a263;
+      main .foto-man .foto1 span:first-of-type {
+        display: block;
+        color: #232323;
         padding-top: 10px; }
+      main .foto-man .foto1 span:last-of-type {
+        display: block;
+        color: #b5a263; }
+      main .foto-man .foto1 .social-icon {
+        float: right;
+        padding-top: 10px; }
+      main .foto-man .foto1 .men-name {
+        float: left; }
+    main .foto-man .foto2 {
+      width: 250px;
+      height: 300px; }
+      main .foto-man .foto2 img {
+        width: 100%; }
+      main .foto-man .foto2 span:first-of-type {
+        display: block;
+        color: #232323;
+        padding-top: 10px; }
+      main .foto-man .foto2 span:last-of-type {
+        display: block;
+        color: #b5a263; }
+      main .foto-man .foto2 .social-icon {
+        float: right;
+        padding-top: 10px; }
+      main .foto-man .foto2 .men-name {
+        float: left; }
     main .foto-man .foto2 {
       width: 250px;
       height: 300px; }
@@ -89,5 +131,116 @@ main {
       height: 300px; }
       main .foto-man .foto3 img {
         width: 100%; }
+      main .foto-man .foto3 span:first-of-type {
+        display: block;
+        color: #232323;
+        padding-top: 10px; }
+      main .foto-man .foto3 span:last-of-type {
+        display: block;
+        color: #b5a263; }
+      main .foto-man .foto3 .social-icon {
+        float: right;
+        padding-top: 10px; }
+      main .foto-man .foto3 .men-name {
+        float: left; }
+    main .foto-man .foto2 {
+      width: 250px;
+      height: 300px; }
+      main .foto-man .foto2 img {
+        width: 100%; }
+
+.background-link {
+  background-color: #dedede;
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  border-radius: 10px; }
+
+.fab {
+  font-size: 10px; }
+
+.show-all-button {
+  width: 164px;
+  height: 50px;
+  margin: auto;
+  border: 1px solid #24282f;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-bottom: 30px; }
+  .show-all-button .show-all {
+    text-decoration: none;
+    display: inline-block;
+    font: 400 16px Arial Helvetica sans-serif;
+    color: #24282f;
+    text-align: center;
+    padding: 17px 20px 18px;
+    text-transform: uppercase; }
+
+.slider-box {
+  background-color: #f7f7f7; }
+  .slider-box .what-our-clients-say {
+    text-transform: uppercase;
+    font: 700 24px Arial Helvetica sans-serif;
+    color: #24282f;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 60px; }
+    .slider-box .what-our-clients-say:after {
+      display: block;
+      content: "";
+      margin: auto;
+      margin-top: 15px;
+      background-color: #24282f;
+      height: 2px;
+      width: 77px; }
+  .slider-box .slider-img {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    margin-bottom: 35px; }
+    .slider-box .slider-img img {
+      width: 100%;
+      text-align: center; }
+  .slider-box p.feedback {
+    color: #000000;
+    width: 810px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 45px; }
+  .slider-box .Larry-Jane {
+    color: #b5a263;
+    font: 400 16px Arial Helvetica sans-serif;
+    text-align: center;
+    margin: 0 auto 18px;
+    text-transform: uppercase; }
+  .slider-box .General-Manager {
+    color: #000000;
+    font: 700 14px Arial Helvetica sans-serif;
+    margin: auto;
+    padding-bottom: 115px;
+    text-align: center;
+    text-transform: uppercase; }
+
+.owl-carousel {
+  position: relative; }
+
+.owl-nav .owl-prev:before {
+  content: url("..//img/prev-button.png");
+  width: 23px;
+  height: 25px;
+  position: absolute;
+  top: 300px;
+  left: 0; }
+.owl-nav .owl-next:after {
+  content: url("..//img/next-button.png");
+  width: 23px;
+  height: 25px;
+  position: absolute;
+  top: 300px;
+  right: 0; }
+
+.owl-theme .owl-dots {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
